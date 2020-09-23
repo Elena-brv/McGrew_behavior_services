@@ -1,0 +1,28 @@
+.nav {
+
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-left: 40px;
+  }
+
+  &__link {
+    color: #454546;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #fff;
+
+      // &::after {
+      //   content: '';
+      //   width: 55px;
+      //   height: 5px;
+      //   background-color: $styleColor;
+      // }
+    }
+  }
+}

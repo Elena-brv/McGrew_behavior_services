@@ -1,0 +1,22 @@
+.header {
+  padding-top: 40px;
+  height: 660px;
+  background-image: url('../images/jared-sluyter.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__logo {
+    width: 364px;
+    height: 29px;
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__home {
+    margin-top: 180px;
+  }
+}
