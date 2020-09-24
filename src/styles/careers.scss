@@ -1,0 +1,49 @@
+.careers {
+  background-color: #367ab7;
+
+  &__container {
+    margin-bottom: 60px;
+    display: flex;
+  }
+
+  &__picture {
+    width: 608px;
+    height: 440px;
+  }
+
+  &__info {
+    max-width: 600px;
+    padding-top: 35px;
+    padding-left: 30px;
+    color: #fff;
+  }
+
+  &__appeal {
+    font-style: italic;
+  }
+
+  &__heading {
+    @extend %heading;
+    margin: 34px 0;
+    position: relative;
+    line-height: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -14px;
+      left: 196px;
+      width: 120px;
+      height: 4px;
+      background-color: $styleColor;
+    }
+  }
+
+  &__text {
+    max-width: 500px;
+  }
+
+  &__link {
+    margin: 35px 0 50px;
+  }
+}

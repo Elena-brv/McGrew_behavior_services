@@ -1,6 +1,5 @@
 .nav {
 
-
   &__list {
     display: flex;
   }
@@ -10,19 +9,24 @@
   }
 
   &__link {
+    position: relative;
     color: #454546;
     font-size: 16px;
     text-transform: uppercase;
+    transition: color 0.3s;
 
     &:hover {
       color: #fff;
 
-      // &::after {
-      //   content: '';
-      //   width: 55px;
-      //   height: 5px;
-      //   background-color: $styleColor;
-      // }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -40px;
+        width: 100%;
+        height: 5px;
+        background-color: $styleColor;
+      }
     }
   }
 }

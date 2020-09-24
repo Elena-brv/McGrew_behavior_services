@@ -6,7 +6,7 @@
     position: relative;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: -14px;
       left: 176px;
@@ -22,16 +22,16 @@
   }
 
   &__link {
-    display: block;
-    width: 285px;
-    height: 60px;
+    // display: block;
+    // width: 285px;
+    // height: 60px;
 
-    font-size: 20px;
-    line-height: 60px;
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    background-color: #e1aa6e;
-    box-shadow: 0 10px #ba8e5b;
+    // font-size: 20px;
+    // line-height: 60px;
+    // text-align: center;
+    // color: #fff;
+    // text-transform: uppercase;
+    // background-color: #e1aa6e;
+    // box-shadow: 0 10px #ba8e5b;
   }
 }
