@@ -10,7 +10,12 @@
     margin-top: 70px;
     font-weight: 700;
     font-size: 24px;
+    text-align: center;
     color: #777;
+
+    @media (max-width: $mobileBreakPoint) {
+      margin-top: 50px;
+    }
   }
 
   &__text {
@@ -23,5 +28,9 @@
 
   &__link {
     margin-bottom: 80px;
+
+    @media (max-width: $mobileBreakPoint) {
+      margin-bottom: 60px;
+    }
   }
 }

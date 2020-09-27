@@ -41,6 +41,8 @@
     "projectType": "layout"
   },
   "dependencies": {
-    "D": "^1.0.0"
+    "D": "^1.0.0",
+    "j": "^1.0.0",
+    "jquery": "^3.5.1"
   }
 }

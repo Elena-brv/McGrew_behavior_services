@@ -1,21 +1,55 @@
 .careers {
   background-color: #367ab7;
+  $pictureHeight: 440px;
+  $mediumDesktopPictureHeight: 396px;
 
   &__container {
     margin-bottom: 60px;
+    padding-left: 0;
     display: flex;
+
+    @media (max-width: $mobileBreakPoint) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__picture {
     width: 608px;
-    height: 440px;
+    height: $pictureHeight;
+    align-self: center;
+
+    @media (max-width: $mediumDesktopBreakPoint) {
+      width: 50%;
+      height: $mediumDesktopPictureHeight;
+    }
+
+    @media (max-width: $tabletBreakPoint) {
+      height: 72%;
+    }
+
+    @media (max-width: $mobileBreakPoint) {
+      order: 2;
+      margin-bottom: 20px;
+    }
+
   }
 
   &__info {
+    position: relative;
     max-width: 600px;
-    padding-top: 35px;
-    padding-left: 30px;
+    max-height: $pictureHeight;
+    padding: 35px 0 50px 30px;
     color: #fff;
+
+    @media (max-width: $mediumDesktopBreakPoint) {
+      padding: 25px 0 40px 20px;
+      max-height: $mediumDesktopPictureHeight;
+    }
+
+    @media (max-width: $mobileBreakPoint) {
+      text-align: center;
+    }
   }
 
   &__appeal {
@@ -28,22 +62,41 @@
     position: relative;
     line-height: 1;
 
+    @media (max-width: $mediumDesktopBreakPoint) {
+      margin: 24px 0;
+    }
+
+    @media (max-width: $tabletBreakPoint) {
+      margin-top: 10px;
+    }
+  }
+
+  &__underline {
+    position: relative;
+
     &::after {
-      content: "";
-      position: absolute;
-      bottom: -14px;
-      left: 196px;
-      width: 120px;
-      height: 4px;
-      background-color: $styleColor;
+      @include line;
     }
   }
 
   &__text {
     max-width: 500px;
+
+    @media (max-width: $mediumDesktopBreakPoint) {
+      font-size: 16px;
+    }
   }
 
   &__link {
-    margin: 35px 0 50px;
+    margin-top: 35px;
+
+    @media (max-width: $mediumDesktopBreakPoint) {
+      margin-top: 25px;
+    }
+
+    @media (max-width: $mobileBreakPoint) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }

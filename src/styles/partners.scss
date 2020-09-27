@@ -1,11 +1,10 @@
 .partners {
 
   &__container {
-    height: 100px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin: 30px auto;
   }
 
+  &__item {
+    text-align: center;
+  }
 }

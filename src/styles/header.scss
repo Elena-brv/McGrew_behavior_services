@@ -6,9 +6,23 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  &__container {
+    position: relative;
+  }
+
   &__logo {
     width: 364px;
     height: 29px;
+
+    @media (max-width: $tabletBreakPoint) {
+      width: 290px;
+      height: 23px;
+    }
+
+    @media (max-width: $smallMobileBreakPoint) {
+      width: 200px;
+      height: 20px;
+    }
   }
 
   &__navigation {
@@ -18,5 +32,46 @@
 
   &__home {
     margin-top: 180px;
+
+    @media (max-width: $tabletBreakPoint) {
+      margin-top: 120px;
+    }
+
+    @media (max-width: $mobileBreakPoint) {
+      margin-top: 80px;
+    }
+
+    @media (max-width: $smallMobileBreakPoint) {
+      margin-top: 180px;
+    }
+  }
+
+  &__mobile-menu {
+    display: none;
+    position: absolute;
+    right: 30px;
+    border: none;
+    background: none;
+    z-index: 2;
+
+    &:focus {
+      outline: none;
+    }
+
+    @media (max-width: $mobileBreakPoint) {
+      display: block;
+    }
+
+  }
+
+  &__toggler {
+    width: 20px;
+    height: 20px;
+    display: none;
+    cursor: pointer;
+
+    &--active {
+      display: block;
+    }
   }
 }

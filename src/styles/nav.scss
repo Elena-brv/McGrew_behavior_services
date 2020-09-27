@@ -2,15 +2,20 @@
 
   &__list {
     display: flex;
+
+    @media (max-width: $mobileBreakPoint) {
+      display: none;
+    }
   }
 
   &__item {
     margin-left: 40px;
+    position: relative;
   }
 
   &__link {
     position: relative;
-    color: #454546;
+    color: $linksColor;
     font-size: 16px;
     text-transform: uppercase;
     transition: color 0.3s;
@@ -28,5 +33,11 @@
         background-color: $styleColor;
       }
     }
+  }
+
+  &__submenu {
+    position: absolute;
+    right: 0;
+    top: 30px;
   }
 }

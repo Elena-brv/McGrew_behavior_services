@@ -1,13 +1,26 @@
 .button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 285px;
   height: 60px;
 
   font-size: 20px;
-  line-height: 60px;
-  text-align: center;
   color: #fff;
   text-transform: uppercase;
+  @include hover(opacity, 0.85);
+
+  @media (max-width: $mobileBreakPoint) {
+    width: 230px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  @media (max-width: $smallMobileBreakPoint) {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+  }
 
   &--major {
     background-color: #e1aa6e;
@@ -18,5 +31,4 @@
     background-color: $styleColor;
     box-shadow: 0 10px #008ea5;
   }
-
 }

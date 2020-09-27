@@ -6,24 +6,28 @@
     flex-direction: column;
     align-items: center;
   }
+
   &__nav {
     margin: 40px 0 35px;
   }
 
-  &__socials {
+  &__networks {
     margin-bottom: 40px;
   }
 
-  &__icon {
-    width: 17px;
-    height: 19px;
+  &__network {
+    display: inline-block;
+    font-family: SocialIcons, system-ui;
+    font-size: 21px;
     margin: 0 30px;
+    color: #666;
+    @include hover(color, #000);
   }
 
   &__copyrights {
     margin: 35px 0 54px;
     font-size: 12px;
+    text-align: center;
     color: $commonFooterColor;
-
   }
 }
