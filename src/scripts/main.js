@@ -13,14 +13,14 @@ $(function() {
 
     responsive: [
       {
-        breakpoint: mediumDesktopBreakPoint,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 3,
           variableWidth: false,
         },
       },
       {
-        breakpoint: mobileBreakPoint,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -28,7 +28,7 @@ $(function() {
         },
       },
       {
-        breakpoint: smallMobileBreakPoint,
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
